@@ -11,21 +11,23 @@ http://www.eventbrite.com/userkeyapi
 ### Load the API Client library ###
 
     require 'Eventbrite.php';
+    
+    use UsabilityDynamics\Eventbrite;
 
 ### Initialize the client by setting your authentication tokens ###
 Add your authentication tokens to make this example work:
 
-    $eb_client = new Eventbrite( array('app_key'=>'YOUR_APP_KEY', 
+    $eb_client = new Client( array('app_key'=>'YOUR_APP_KEY', 
                                        'user_key'=>'YOUR_USER_KEY'));
 
 ### Initialization using OAuth2.0 tokens ###
 You can also initialize the API client with an OAuth2.0 "access_token":
 
-    $eb_client = new Eventbrite( array('access_token'=>'YOUR_ACCESS_TOKEN')); 
+    $eb_client = new Client( array('access_token'=>'YOUR_ACCESS_TOKEN')); 
 
 Or, initialize the client by using an intermediary OAuth2.0 "access_code", which will automaticaly be exchanged for an OAuth2.0 "access_token":
 
-    $eb_client = new Eventbrite(array('app_key'=>'YOUR_API_KEY', 
+    $eb_client = new Client(array('app_key'=>'YOUR_API_KEY', 
                                       'client_secret'=>'YOUR_CLIENT_SECRET',
                                       'access_code'=>'YOUR_ACCESS_CODE' )); 
 
@@ -40,7 +42,7 @@ See Eventbrite's [API Docs](http://developer.eventbrite.com/doc) for more inform
 	$resp = $eb_client->event_get( array('id' => 'EVENT_ID') );
 
     // print a ticket widget for the event:
-    print( Eventbrite::ticketWidget($resp->event) );
+    print( Client::ticketWidget($resp->event) );
 
 ### event_search example ###
 
