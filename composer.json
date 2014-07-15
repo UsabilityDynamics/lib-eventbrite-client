@@ -5,10 +5,10 @@
   "description": "PHP client for the Eventbrite API http://eventbrite.github.com",
   "tags": [ "eventbrite", "client", "php", "api" ],
   "keywords": [ "eventbrite", "client", "php", "api" ],
-  "homepage": "",
+  "homepage": "https://github.com/UsabilityDynamics/lib-eventbrite-client",
   "author": {
-    "name": "",
-    "url": ""
+    "name": "UsabilityDynamics, Inc.",
+    "url": "https://usabilitydynamics.com"
   },
   "minimum-stability": "dev",
   "repository": {
