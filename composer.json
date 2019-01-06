@@ -1,20 +1,24 @@
 {
-  "name": "lib-eventbrite-client",
-  "version": "0.1.0",
+  "name": "udx/lib-eventbrite-client",
+  "version": "1.1.0",
   "type": "library",
   "description": "PHP client for the Eventbrite API http://eventbrite.github.com",
   "tags": [ "eventbrite", "client", "php", "api" ],
   "keywords": [ "eventbrite", "client", "php", "api" ],
-  "homepage": "https://github.com/UsabilityDynamics/lib-eventbrite-client",
-  "author": {
-    "name": "UsabilityDynamics, Inc.",
-    "url": "https://usabilitydynamics.com"
-  },
+  "homepage": "https://github.com/udx/lib-eventbrite-client",
+  "authors": [
+    {
+      "name": "UsabilityDynamics, Inc.",
+      "homepage": "https://usabilitydynamics.com"
+    }
+  ],
   "minimum-stability": "dev",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/UsabilityDynamics/lib-eventbrite-client"
-  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/udx/lib-eventbrite-client"
+    }
+  ],
   "require": {
     "php": ">=5.3"
   },
